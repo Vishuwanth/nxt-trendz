@@ -8,7 +8,6 @@ import Header from '../Header'
 import SimilarProductItem from '../SimilarProductItem'
 
 import './index.css'
-import { connect } from 'react-redux'
 
 const apiStatusConstants = {
 	initial: 'INITIAL',
@@ -221,17 +220,4 @@ class ProductItemDetails extends Component {
 	}
 }
 
-const mapStateToProps = (state) => {
-	return {
-		items: state.items,
-	}
-}
-const mapDispatchToProps = (dispatch) => {
-	return {
-		addToCart: (id) => {
-			dispatch(addToCart(id))
-		},
-	}
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(ProductItemDetails)
+export default ProductItemDetails

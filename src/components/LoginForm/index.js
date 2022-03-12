@@ -6,8 +6,8 @@ import './index.css'
 
 class LoginForm extends Component {
 	state = {
-		username: '',
-		password: '',
+		username: 'vishu',
+		password: 'vishu',
 		showSubmitError: false,
 		errorMsg: '',
 	}
@@ -118,10 +118,7 @@ class LoginForm extends Component {
 						className='login-website-logo-desktop-image'
 						alt='website logo'
 					/>
-					<div className=''>
-						<h1>UserName:vishu</h1>
-						<h1>password:vishu</h1>
-					</div>
+
 					<div className='input-container'>{this.renderUsernameField()}</div>
 					<div className='input-container'>{this.renderPasswordField()}</div>
 					<button type='submit' className='login-button'>
